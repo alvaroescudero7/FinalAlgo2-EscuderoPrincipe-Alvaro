@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Modelo;
 
-/**
- *
- * @author alvar
- */
 public class VentaArreglo {
+    private Venta[] ventas;
+    private int indice;
+    
+    public VentaArreglo(int tamano) {
+        this.ventas = new Venta[tamano];
+        this.indice = 0;
+    }
+    public void agregar(Venta venta){
+        this.ventas[this.indice] = venta;
+        this.indice++;
+    }
     
 }
