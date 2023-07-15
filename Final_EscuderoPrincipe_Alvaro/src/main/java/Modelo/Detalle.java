@@ -15,5 +15,25 @@ public class Detalle {
         this.total = total;
         this.producto = producto;
     }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public float getPrecio() {
+        return precio;
+    }
+
+    public float getDescuento() {
+        return descuento;
+    }
+
+    public float getTotal() {
+        return total;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
     
 }

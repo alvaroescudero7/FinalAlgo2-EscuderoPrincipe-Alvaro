@@ -18,4 +18,12 @@ public class Categoria {
         return disponible;
     }
     
+    public void habilitar() {
+        disponible = true;
+    }
+    
+    public void deshabilitar() {
+        disponible = false;
+    }
+    
 }

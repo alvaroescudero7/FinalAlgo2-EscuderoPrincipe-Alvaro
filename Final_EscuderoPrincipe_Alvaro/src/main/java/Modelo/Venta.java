@@ -17,5 +17,13 @@ public class Venta {
         this.cliente = cliente;
         this.trabajador = trabajador;
     }
-    
+    public void agregarProducto(Producto p){
+        
+    }
+    public boolean eliminarProducto(Producto p, int cantidad){
+        
+    }
+    public float validarCarrito(){
+        
+    }
 }

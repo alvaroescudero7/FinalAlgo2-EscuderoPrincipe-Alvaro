@@ -20,5 +20,13 @@ public class Trabajador extends Persona{
     public String getEmail() {
         return email;
     }
-    
+    public boolean ingresar(String email, String password){
+        
+    }
+    public boolean salir(){
+        
+    }
+    public boolean crearVenta(Cliente c){
+        
+    }
 }

@@ -20,6 +20,10 @@ public class Cliente extends Persona {
     public float getDinero() {
         return dinero;
     }
-    
-    
+    public boolean pagar(){
+        
+    }
+    public boolean recargarDinero(){
+        
+    }
 }

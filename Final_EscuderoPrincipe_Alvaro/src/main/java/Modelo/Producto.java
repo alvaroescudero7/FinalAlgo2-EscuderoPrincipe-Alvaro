@@ -15,5 +15,40 @@ public class Producto {
         this.marca = marca;
         this.categoria = categoria;
     }
-    
+
+    public float getPrecio() {
+        return precio;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+    public boolean vender(int cantidad){
+        if (stock >= cantidad){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public boolean reponer(int cantidad){
+        if (stock <= cantidad){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
