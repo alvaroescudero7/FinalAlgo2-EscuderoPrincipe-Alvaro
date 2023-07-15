@@ -2,6 +2,7 @@
 package Modelo;
 
 import java.util.Date;
+import javax.swing.JOptionPane;
 
 public class Cliente extends Persona {
     private int celular;
@@ -20,10 +21,16 @@ public class Cliente extends Persona {
     public float getDinero() {
         return dinero;
     }
-    public boolean pagar(){
-        
+    public void pagar(float cantidad){
+        if (dinero >= cantidad) {
+            dinero -= cantidad;
+            JOptionPane.showMessageDialog(null,"Pago realizado. Dinero restante: "+dinero);
+        } else {
+            JOptionPane.showMessageDialog(null,"No tienes suficiente dinero.");
+        }
     }
-    public boolean recargarDinero(){
-        
+    public void recargarDinero(float cantidad){
+        dinero += cantidad;
+        JOptionPane.showMessageDialog(null,"Recarga realizada. Dinero actual: " + dinero);
     }
 }

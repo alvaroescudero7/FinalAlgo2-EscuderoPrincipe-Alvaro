@@ -1,6 +1,8 @@
 
 package Modelo;
 
+import javax.swing.JOptionPane;
+
 public class Producto {
     private float precio; 
     private String nombre;
@@ -35,20 +37,25 @@ public class Producto {
     public Categoria getCategoria() {
         return categoria;
     }
-    public boolean vender(int cantidad){
+    public void vender(int cantidad){
         if (stock >= cantidad){
-            return true;
+            stock-=cantidad;
+            JOptionPane.showMessageDialog(null,"Venta realizada. Stock actual: "+stock);
         }
         else{
-            return false;
+            JOptionPane.showMessageDialog(null,"No hat stock disponible para vender");
         }
     }
-    public boolean reponer(int cantidad){
-        if (stock <= cantidad){
-            return true;
-        }
-        else{
-            return false;
-        }
+    public void reponer(int cantidad){
+        stock += cantidad;
+        JOptionPane.showMessageDialog(null,"Stock repuesto. Stock actual: "+stock);
+    }
+
+    void add(Producto p) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    boolean remove(Producto p) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
