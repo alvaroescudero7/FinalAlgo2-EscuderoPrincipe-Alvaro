@@ -9,9 +9,6 @@ public class VentaArreglo {
         this.ventas = new Venta[tamano];
         this.indice = 0;
     }
-    public boolean registrarVenta(Venta ventas){
-        
-    }
     public void agregar(Venta ventas){
         this.ventas[this.indice] = ventas;
         this.indice++;

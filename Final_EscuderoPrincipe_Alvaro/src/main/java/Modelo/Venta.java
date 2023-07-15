@@ -43,14 +43,20 @@ public class Venta {
         p.add(p);
         JOptionPane.showMessageDialog(null,"Producto agregado a la venta: " + p.getNombre());
     }
-    public boolean eliminarProducto(Producto p, int cantidad){
+    public void eliminarProducto(Producto p, int cantidad){
         if (p.remove(p)) {
             JOptionPane.showMessageDialog(null,"Producto eliminado de la venta: " + p.getNombre());
         } else {
             JOptionPane.showMessageDialog(null,"El producto no se encuentra en la venta.");
         }
     }
-    public float validarCarrito(){
-        
+    public boolean validarCarrito(Producto p){
+         if (p.isEmpty()) {
+            JOptionPane.showMessageDialog(null,"El carrito está vacío. Agrega al menos un producto.");
+            return false;
+        } else {
+            JOptionPane.showMessageDialog(null,"El carrito ha sido validado correctamente.");
+            return true;
+        }
     }
 }
