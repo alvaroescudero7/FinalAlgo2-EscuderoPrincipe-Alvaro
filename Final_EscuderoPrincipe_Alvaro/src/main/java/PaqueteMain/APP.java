@@ -11,5 +11,6 @@ public class APP {
         PersonaArreglo arreglo = new PersonaArreglo(10);
         ControladorIngreso controlIngreso = new ControladorIngreso(arreglo,fIngreso);
         controlIngreso.iniciar();
+        //comentario
     }
 }
