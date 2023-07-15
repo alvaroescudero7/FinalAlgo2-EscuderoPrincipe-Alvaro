@@ -11,4 +11,5 @@
         <maven.compiler.target>20</maven.compiler.target>
         <exec.mainClass>com.mycompany.final_escuderoprincipe_alvaro.Final_EscuderoPrincipe_Alvaro</exec.mainClass>
     </properties>
+    <name>EF_Alvaro</name>
 </project>

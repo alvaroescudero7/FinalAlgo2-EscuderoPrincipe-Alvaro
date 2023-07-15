@@ -13,5 +13,4 @@ public class VentaArreglo {
         this.ventas[this.indice] = ventas;
         this.indice++;
     }
-    
 }

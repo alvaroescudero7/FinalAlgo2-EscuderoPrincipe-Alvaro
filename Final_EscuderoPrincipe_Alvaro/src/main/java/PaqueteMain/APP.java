@@ -1,5 +1,5 @@
 
-package EF_Algo2;
+package PaqueteMain;
 
 import Controlador.ControladorIngreso;
 import Modelo.PersonaArreglo;

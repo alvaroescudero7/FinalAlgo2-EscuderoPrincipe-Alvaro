@@ -23,7 +23,6 @@ public class ControladorIngreso {
         this.fi.btnIngreso.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                //Librerias.SerializadoraGen.serializar("Datos", Configuracion.Datos.personas);
                 fi.setVisible(false);
                 frmPrincipal fPrincipal = new frmPrincipal();
                 ControladorPrincipal controlPrincipal = new ControladorPrincipal(pa,fPrincipal);
