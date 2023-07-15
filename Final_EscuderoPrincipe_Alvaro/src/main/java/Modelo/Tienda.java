@@ -16,8 +16,6 @@ public class Tienda {
         this.categorias = new Categoria[tc];
         this.productos = new Producto[tpr];
         this.personas = new Persona[tpe];
-        
-        
     }
 
     public String getNombre() {

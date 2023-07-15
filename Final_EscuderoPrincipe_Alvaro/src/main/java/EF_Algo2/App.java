@@ -1,9 +1,15 @@
 
 package EF_Algo2;
 
-public class App {
+import Controlador.ControladorIngreso;
+import Modelo.PersonaArreglo;
+import Vista.frmIngreso;
 
+public class APP {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        frmIngreso fIngreso = new frmIngreso();
+        PersonaArreglo arreglo = new PersonaArreglo(10);
+        ControladorIngreso controlIngreso = new ControladorIngreso(arreglo,fIngreso);
+        controlIngreso.iniciar();
     }
 }
